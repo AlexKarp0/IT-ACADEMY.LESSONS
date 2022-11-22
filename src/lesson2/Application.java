@@ -22,5 +22,9 @@ public class Application {
         System.out.println(cat2.getMoney());
         cat2.setNickname("vasya");
         System.out.println(cat2.getInitials());
+        cat1.setMoney(100);
+        cat1.spendMoney(20);
+        System.out.println(cat1.getMoney());
+        System.out.println(cat1.getInitials());
     }
 }
