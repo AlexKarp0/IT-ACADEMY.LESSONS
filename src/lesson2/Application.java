@@ -1,7 +1,7 @@
 package lesson2;
 
 public class Application {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Cat cat1 = new Cat("Cat with name");
         cat1.eat();
         cat1.sleep();
@@ -27,5 +27,8 @@ public class Application {
         cat1.spendMoney(2);
         cat1.spendMoney(3);
         cat1.spendMoney(4);
+        cat1.spendMoney(5);
+        cat1.spendMoney(47);
+
     }
 }
