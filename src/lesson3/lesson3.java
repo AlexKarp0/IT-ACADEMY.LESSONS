@@ -11,7 +11,7 @@ public class lesson3 {
         char gender = scanner.next().charAt(0);
         System.out.println("How old are You?");
         int age = scanner.nextInt();
-
+        System.out.println("I'm " + gender + " " + name + " "+ age + " years Old");
     }
 }
 
