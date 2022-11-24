@@ -1,12 +1,13 @@
 package lesson3;
 
-import javax.security.sasl.SaslClient;
+
 import java.util.Scanner;
 
 public class Task3 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int month = scanner.nextInt();
+        Scanner scanner= new Scanner(System.in);
+        int month = 0;
+        month = scanner.hasNextInt() ?  scanner.nextInt() : -1;
         switch (month) {
             case 1:
                 System.out.println("JAN");
@@ -46,6 +47,7 @@ public class Task3 {
                 break;
             default:
                 System.out.println("Wrong month number");
+                System.out.println(month);
 
         }
 

@@ -1,12 +1,16 @@
 package lesson3;
 
+import java.util.Scanner;
+
 public class lesson3 {
     public static void main(String[] args) {
-        int a = 2_123_000;
-        int b = 100;
-        int c = 234;
-        int res = a / b * c;
-        System.out.println(res);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter Name");
+        String name = scanner.nextLine();
+        System.out.println("Enter Gende");
+        char gender = scanner.next().charAt(0);
+        System.out.println("How old are You?");
+        int age = scanner.nextInt();
 
     }
 }
