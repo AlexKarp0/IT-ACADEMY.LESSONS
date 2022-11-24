@@ -1,6 +1,7 @@
 package lesson3;
+import java.util.Scanner;
 
-public class lesson3 {
+public class Task {
     public static void main(String[] args) {
         int a = 2_123_000;
         int b = 100;
@@ -10,4 +11,3 @@ public class lesson3 {
 
     }
 }
-
