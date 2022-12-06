@@ -35,6 +35,6 @@ public class ArraysTask18 {
             a[i][1] = second;
 
         }
-        System.out.println(Arrays.toString(a));
+        System.out.println(Arrays.deepToString(a));
     }
 }
