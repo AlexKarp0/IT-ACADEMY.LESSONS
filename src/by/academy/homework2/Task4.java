@@ -14,17 +14,18 @@ import java.util.Scanner;
 public class Task4 {
     public static void main(String[] args) {
         String[] suit = {"Diamonds","Hearts","Clubs","Spades"};
-        String[] nominals = {"2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"};
-        String[] cardDeck = new String[52];
+        String[] nominal = {"2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"};
+        
+        String[] cardDeck = new String[suit.length * nominal.length];
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i <suit.length ; i++) {
-            for (int j = 0; j < nominals.length ; j++) {
+            for (int j = 0; j < nominal.length ; j++) {
                 Random rn = new Random();
-                int index = rn.nextInt(52);
-                while (cardDeck[index] != null){
-                    index = rn.nextInt(52);
+                int index = rn.nextInt(suit.length * nominal.length);
+                while (cardDeck[index] != null ){
+                    index = rn.nextInt(suit.length * nominal.length);
                 }
-                cardDeck[index] = nominals[j] + " of " + suit[i];
+                cardDeck[index] = nominal[j] + " of " + suit[i];
                 //System.out.println(cardDeck[index]);
             }
 
