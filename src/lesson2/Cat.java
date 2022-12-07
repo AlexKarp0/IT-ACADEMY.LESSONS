@@ -79,4 +79,15 @@ public class Cat {
     public static void main(String[] args) {
 
     }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "age=" + age +
+                ", nickname='" + nickname + '\'' +
+                ", money=" + money +
+                ", initials=" + initials +
+                ", isHomeAnimal=" + isHomeAnimal +
+                '}';
+    }
 }
