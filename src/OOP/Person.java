@@ -37,7 +37,7 @@ public class Person {
                 '}';
     }
     public void move(){
-        System.out.println(getFullName() + " двигается");
+        System.out.println(fullName+ " двигается");
     }
     public void talk(){
         System.out.println(getFullName() + "  говорит");

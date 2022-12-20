@@ -21,7 +21,7 @@ import java.util.Scanner;
 public class Task0 {
     static int pairs (int k, int[] arr){
         int pairsCount = 0;
-        Arrays.sort(arr);
+        Arrays.sort(arr);// n * LogN
         int l = 0;
         int r = 1;
         //System.out.println(Arrays.toString(arr));
