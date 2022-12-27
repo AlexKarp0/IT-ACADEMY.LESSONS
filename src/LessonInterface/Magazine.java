@@ -26,15 +26,16 @@ public class Magazine  implements Printable{
     @Override
     public String toString() {
         return "Magazine{" +
-                "cretor='" + creator + '\'' +
+                "creator='" + creator + '\'' +
                 '}';
     }
     public static void printMagazines(Printable[] printables){
         for (Printable printable : printables) {
             if (printable instanceof Magazine){
-                System.out.println(printable.toString());
+                System.out.println(printable);
             }
 
         }
+
     }
 }

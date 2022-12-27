@@ -1,17 +1,23 @@
 package by.academy.Homework3;
 
-import java.math.BigDecimal;
+import java.time.LocalDate;
 
 public class Person {
     private String name;
-    private BigDecimal money;
+    private double money;
+    private LocalDate birthDay;
     public Person(){
         super();
     }
-    public Person(String name, BigDecimal money) {
+    public Person(String name, double money) {
         this.name = name;
+        this.money = money;//  money > 0 ? money : 0;
+    }
 
-        this.money =money;//  money > 0 ? money : 0;
+    public Person(String name, double money, LocalDate birthDay) {
+        this.name = name;
+        this.money = money;
+        this.birthDay = birthDay;
     }
 
     public String getName() {
@@ -22,11 +28,29 @@ public class Person {
         this.name = name;
     }
 
-    public BigDecimal getMoney() {
+    public double getMoney() {
         return money;
     }
 
-    public void setMoney(BigDecimal money) {
+    public void setMoney(double money) {
         this.money = money;
     }
+
+    public LocalDate getBirthDay() {
+        return birthDay;
+    }
+
+    public void setBirthDay(LocalDate birthDay) {
+        this.birthDay = birthDay;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", money=" + money +
+                ", birthDay=" + birthDay +
+                '}';
+    }
 }
+

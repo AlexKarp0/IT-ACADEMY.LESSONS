@@ -25,4 +25,14 @@ public class Cheese extends  Product{
     protected double discount() {
         return this.getFullPrice() > 100 ? 0.8 : 1;
     }
+
+    @Override
+    public String toString() {
+        return "Cheese{" +
+                "age=" + age +
+                ", quantity=" + quantity +
+                ", price=" + price +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

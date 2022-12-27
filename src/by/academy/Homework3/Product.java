@@ -1,11 +1,18 @@
 package by.academy.Homework3;
 
 public abstract class Product {
-    private double quantity;
-    private double price;
+    protected double quantity;
+    protected double price;
+    protected String name;
     public Product(){
         super();
     }
+
+    public Product(double quantity, double price, String name) {
+        this(quantity,price);
+        this.name = name;
+    }
+
     public Product(double quantity, double price) {
         this.quantity = quantity;
         this.price = price;
@@ -34,11 +41,20 @@ public abstract class Product {
         return getFullPrice() * discount();
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString() {
-        return  this.getClass() +"[" +
+        return "Product{" +
                 "quantity=" + quantity +
                 ", price=" + price +
-                ']';
+                ", name='" + name + '\'' +
+                '}';
     }
 }
