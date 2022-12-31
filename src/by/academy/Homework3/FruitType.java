@@ -10,4 +10,12 @@ public enum FruitType {
         this.index = index;
         this.desc = desc;
     }
+
+    @Override
+    public String toString() {
+        return "FruitType{" +
+                "index=" + index +
+                ", desc='" + desc + '\'' +
+                '}';
+    }
 }
