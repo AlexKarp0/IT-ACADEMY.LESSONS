@@ -4,6 +4,7 @@ import java.security.KeyPair;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
+import java.util.TreeSet;
 
 public class Application {
     public static void main(String[] args) {
@@ -13,7 +14,16 @@ public class Application {
         heavyBoxes.add(newHB);//1
         heavyBoxes.add(newHB);//2
 
-        for (HeavyBox heavyBox : heavyBoxes) {
+        TreeSet<HeavyBox> heavyBoxesSet = new TreeSet<HeavyBox>();
+        heavyBoxesSet.add(new HeavyBox(999,999,999,999));
+        heavyBoxesSet.add(new HeavyBox(111,999,999,999));
+        heavyBoxesSet.add(new HeavyBox(222,999,999,999));
+
+        for (HeavyBox heavyBox : heavyBoxesSet) {
+            System.out.println(heavyBox.toString());
+
+        }
+        /*for (HeavyBox heavyBox : heavyBoxes) {
             System.out.println(heavyBox);
 
         }
@@ -34,6 +44,6 @@ public class Application {
 
         System.out.println("to arrays");
         HeavyBox[] arr = (HeavyBox[]) heavyBoxes.toArray();
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr));*/
     }
 }

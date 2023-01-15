@@ -35,7 +35,7 @@ public class CustomDate {
 
     }
 
-    public class Year {
+    public static class Year {
         int year;
         public Year() {
           super();
@@ -56,7 +56,7 @@ public class CustomDate {
                     '}';
         }
     }
-    public class Month {
+    public static class Month {
         int month;
         public Month() {
             super();
