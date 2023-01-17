@@ -77,10 +77,10 @@ public class Solution {
        DoublyLinkedListNode temp = loopTail.prev;
       loopTail.prev = loopTail.next;
       loopTail.next = temp;
-      loopTail = temp;
+      //loopTail = temp;
       list.tail = loopTail;
       list.head = tailNode;
-      return  tailNode;
+      return  list.head;
 
 
     }
@@ -104,7 +104,7 @@ public class Solution {
         System.out.println();
 
         DoublyLinkedListNode llist1 = reverse(llist);
-
+        llist1 = reverse(llist);
         printDoublyLinkedList(llist1, " ");
         System.out.println();
         scanner.close();
