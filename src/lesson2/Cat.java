@@ -1,9 +1,12 @@
 package lesson2;
 
-public class Cat {
+import java.io.Serializable;
+
+public class Cat  implements Serializable {
+
     int age;
     String nickname;
-    double money;
+    transient double money;
     char initials;
     boolean isHomeAnimal;
 

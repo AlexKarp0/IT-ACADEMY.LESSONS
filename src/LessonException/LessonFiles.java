@@ -1,2 +1,4 @@
-package LessonException;public class LessonFiles {
+package LessonException;
+
+public class LessonFiles {
 }
