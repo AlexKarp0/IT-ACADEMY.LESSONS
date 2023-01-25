@@ -15,7 +15,7 @@ public class Task4 {
         File folder = new File(FOLDER_NAME);
         File inputFile = new File(INPUT_FILE);
         File outputFile = new File(OUTPUT_FILE);
-        String content = null;
+        String content = "";
         try(BufferedReader reader = new BufferedReader(new FileReader(inputFile));
             BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
             if (!inputFile.exists()) {
