@@ -21,6 +21,7 @@ public class Task2 {
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(lorem));
              BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outputFile))) {
             String str = null;
+            //outputFile.
             while ((str = bufferedReader.readLine()) != null) {
                 bufferedWriter.write(str.replaceAll(REPLACED, ""));
                 bufferedWriter.write("");
