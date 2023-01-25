@@ -1,0 +1,3 @@
+FIle: FILE_0.txt: size : 299
+FIle: FILE_1.txt: size : 391
+FIle: FILE_2.txt: size : 93
